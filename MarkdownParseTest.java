@@ -12,8 +12,6 @@ import java.io.IOException;
 
 public class MarkdownParseTest {
 
-    //String winPath = "C:/Users/kimtj/Documents/GitHub/markdown-parser/";
-
     @Test
     public void addition() {
         assertEquals(2, 1 + 1);
@@ -29,15 +27,7 @@ public class MarkdownParseTest {
         assertEquals(expected, MarkdownParse.getLinks(content));
     }
 
-    @Test
-    public void getLinksTestTwo() throws IOException {
-        Path fileName = Path.of("test-file2.md");
-        String content = Files.readString(fileName);
-        ArrayList expected = new ArrayList<String>();
-        expected.add("https://something.com");
-        expected.add("some-thing.html");
-        assertEquals(expected, MarkdownParse.getLinks(content));
-    }
+    
 
     @Test
     public void getLinksTestThree() throws IOException {
@@ -59,16 +49,7 @@ public class MarkdownParseTest {
         assertEquals(expected, MarkdownParse.getLinks(content));
     }
 
-    @Test
-    public void getLinksTestFive() throws IOException {
-        Path fileName = Path.of("test-file5.md");
-        String content = Files.readString(fileName);
-        ArrayList expected = new ArrayList<String>();
-        expected.add("https://something.com");
-        expected.add("some-thing.html");
-        assertEquals(expected, MarkdownParse.getLinks(content));
-    }
-
+   
     /* @Test
     public void getLinksTestSix() throws IOException {
         Path fileName = Path.of("snippet1.md");

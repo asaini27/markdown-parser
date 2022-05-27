@@ -13,7 +13,7 @@ public class MarkdownParse {
         int currentIndex = 0;
 
         // fix to test-file5.md "< and >"
-        if (markdown.indexOf("[") == -1 &&
+        /*if (markdown.indexOf("[") == -1 &&
             markdown.indexOf("(") == -1) {
             while(currentIndex < markdown.length()) {
                 int leftCarrotOne = markdown.indexOf("<", currentIndex);
@@ -25,10 +25,10 @@ public class MarkdownParse {
                     rightCarrotTwo));
                 currentIndex = rightCarrotTwo + 1;
             }
-        }
+        }*/
 
         // fix to test-file2.md "[ and ]"
-        else if (markdown.indexOf("(") == -1 &&
+        /*else if (markdown.indexOf("(") == -1 &&
             markdown.indexOf("<") == -1) {
             while(currentIndex < markdown.length()) {
                 int openBracket = markdown.indexOf("[", currentIndex);
@@ -39,10 +39,10 @@ public class MarkdownParse {
                     closeBracketTwo));
                 currentIndex = closeBracketTwo + 1;
             }
-        }
+        }*/
 
         // fix to test-file4.md "( and )"
-        else if (markdown.indexOf("[") == -1 &&
+        if (markdown.indexOf("[") == -1 &&
             markdown.indexOf("<") == -1) {
             while(currentIndex < markdown.length()) {
                 int openParen = markdown.indexOf("(", currentIndex);
