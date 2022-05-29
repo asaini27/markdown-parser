@@ -50,8 +50,8 @@ public class MarkdownParseTest {
     }
 
    
-    /* @Test
-    public void getLinksTestSix() throws IOException {
+     @Test
+    public void testingSnippet1() throws IOException {
         Path fileName = Path.of("snippet1.md");
         String content = Files.readString(fileName);
         ArrayList expected = new ArrayList<String>();
@@ -60,8 +60,8 @@ public class MarkdownParseTest {
         expected.add("google.com");
         expected.add("ucsd.edu");
         assertEquals(expected, MarkdownParse.getLinks(content));
-    } */
-
+    } 
+/*
     @Test
     public void getLinksTestSeven() throws IOException {
         Path fileName = Path.of("snippet2.md");
@@ -74,7 +74,7 @@ public class MarkdownParseTest {
         assertEquals(expected, MarkdownParse.getLinks(content));
     }
 
-    /* @Test
+    @Test
     public void getLinksTestEight() throws IOException {
         Path fileName = Path.of("snippet3.md");
         String content = Files.readString(fileName);
